@@ -1,0 +1,95 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.mainContainer {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.content {
+  max-height: 90%;
+  padding: 15px;
+  background-color: rgb(233, 233, 233);
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 50%;
+  overflow: auto;
+}
+.vetaClickable {
+  background-color: rgb(68, 68, 68);
+  padding: 10px;
+  margin: 5px;
+  cursor: pointer;
+  color: white;
+  border-radius: 5px;
+  font-size: 17px;
+}
+.backBtn {
+  background-color: rgb(56, 56, 56);
+  color: white;
+  border: none;
+  cursor: pointer;
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin: 20px;
+  padding: 7px 20px;
+  border-radius: 5px;
+  font-size: 16px;
+}
+.inputText {
+  width: 100px;
+  border: none;
+  background-color: transparent;
+  font-size: 20px;
+  transition: 0.7s;
+  color: black;
+  border-radius: 5px;
+  padding: 7px;
+  text-align: center;
+}
+.inputText::placeholder {
+  text-align: center;
+}
+.inputText:focus::placeholder {
+  text-align: left;
+}
+.inputText:focus {
+  outline: none;
+  width: 95%;
+  background-color: rgb(56, 56, 56);
+  color: white;
+  text-align: left;
+}
+.sentence {
+  margin: 9px;
+  min-width: 95%;
+  text-align: center;
+}
+.char {
+  padding: 2px;
+  font-size: 17px;
+  font-weight: bold;
+}
+.green {
+  background-color: green;
+}
+
+.red {
+  background-color: red;
+}
+
+.green, .red {
+  color: white;
+}
+.error {
+  font-size: 20px;
+  color: red;
+}
